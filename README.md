@@ -7,7 +7,7 @@ Transformers for Integrated Circuits) and looks like a Command-Line Interface.
 
 The InduCalc app is a cli-like and users can type command with this structure: [COMMAND] [ARGUMENTS] [OPTIONS]
 
-### Default:
+### Default features:
 
 - Theme mode: Dark, Light and System;
 - Autocompletion/hints;
@@ -15,11 +15,9 @@ The InduCalc app is a cli-like and users can type command with this structure: [
 - Helper mode: it help users to type/see arguments and options more easily;
 - Clear command: clean up the text area;
 
-### Custom:
+### Custom features:
 
-- project: workspace to organize techfiles and inductor's params
-  - delete: delete an existing project;
-  - list: list project's names into current directory;
-  - new: create a new project;
-  - rename: rename a specific project name;
-- inductor: fu
+- Create projects workspaces to handle techfiles and inductors params;
+- Specify inductors params and then extrac a .gds file;
+- Create, import or export techfiles;
+
