@@ -56,4 +56,7 @@ clear
 ```
 ![clear](https://github.com/user-attachments/assets/098ffc8a-6949-4fd5-90e8-de43419d1872)
 
+#### Creating an inductor
+
+https://github.com/user-attachments/assets/5214b4b8-6ad4-4b24-8dd1-3a7c508e52e8
 
