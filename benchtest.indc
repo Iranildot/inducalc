@@ -1,0 +1,638 @@
+inductors:
+  '10':
+    base_metal: tmet2
+    exit_metal: activ
+    length: 120.0
+    width: 12.0
+    space: 2.0
+    turns: 3.5
+    techfile_name: ihp130
+    x: 0.0
+    y: 0.0
+techfiles:
+  ihp130:
+    layer:
+    - description: SUBSTRATE
+      resistivity: 50
+      thickness: 280
+      permittivity: 11.9
+    - description: EPI
+      resistivity: 20
+      thickness: 3.75
+      permittivity: 11.9
+    - description: OXIDE LAYER 1
+      resistivity: 10000000000.0
+      thickness: 1.04
+      permittivity: 4.1
+    - description: OXIDE LAYER 2
+      resistivity: 10000000000.0
+      thickness: 0.96
+      permittivity: 4.1
+    - description: OXIDE LAYER 3
+      resistivity: 10000000000.0
+      thickness: 1.03
+      permittivity: 4.1
+    - description: OXIDE LAYER 4
+      resistivity: 10000000000.0
+      thickness: 1.03
+      permittivity: 4.1
+    - description: OXIDE LAYER 5
+      resistivity: 10000000000.0
+      thickness: 1.03
+      permittivity: 4.1
+    - description: OXIDE LAYER 6
+      resistivity: 10000000000.0
+      thickness: 0.5143
+      permittivity: 4.1
+    - description: OXIDE LAYER 7
+      resistivity: 10000000000.0
+      thickness: 0.826
+      permittivity: 4.1
+    - description: OXIDE LAYER 8
+      resistivity: 10000000000.0
+      thickness: 4.8
+      permittivity: 4.1
+    - description: OXIDE LAYER 9
+      resistivity: 10000000000.0
+      thickness: 4.5
+      permittivity: 4.1
+    metal:
+    - description: ACTIV
+      layer: 2
+      sheet_resistance: 7000.0
+      thickness: 0.4
+      distance: 0
+      name: ACTIV
+      color: light green
+      gds_number: 1
+      gds_datatype: 0
+    - description: METAL 1
+      layer: 3
+      sheet_resistance: 110
+      thickness: 0.42
+      distance: 0
+      name: MET1
+      color: LightSkyBlue1
+      gds_number: 8
+      gds_datatype: 0
+    - description: METAL 2
+      layer: 4
+      sheet_resistance: 88
+      thickness: 0.49
+      distance: 0
+      name: MET2
+      color: light gray
+      gds_number: 10
+      gds_datatype: 0
+    - description: METAL 3
+      layer: 5
+      sheet_resistance: 88
+      thickness: 0.49
+      distance: 0
+      name: MET3
+      color: dark red
+      gds_number: 30
+      gds_datatype: 0
+    - description: METAL 4
+      layer: 6
+      sheet_resistance: 88
+      thickness: 0.49
+      distance: 0
+      name: MET4
+      color: light green
+      gds_number: 50
+      gds_datatype: 0
+    - description: METAL 5
+      layer: 7
+      sheet_resistance: 88
+      thickness: 0.49
+      distance: 0
+      name: MET5
+      color: gold
+      gds_number: 67
+      gds_datatype: 0
+    - description: TOP METAL 1
+      layer: 9
+      sheet_resistance: 18
+      thickness: 2
+      distance: 0
+      name: TMET1
+      color: wheat
+      gds_number: 126
+      gds_datatype: 0
+    - description: TOP METAL 2
+      layer: 10
+      sheet_resistance: 11
+      thickness: 3
+      distance: 0
+      name: TMET2
+      color: orange
+      gds_number: 134
+      gds_datatype: 0
+    via:
+    - description: ACTIV TO METAL 1 (CONT)
+      top_metal: 1
+      bottom_metal: 0
+      resistance: 17
+      min_width: 0.16
+      space: 0.2
+      enclosure: 0.07
+      endcap_enclosure: 0.07
+      name: CONT
+      color: light blue
+      gds_number: 6
+      gds_datatype: 0
+    - description: METAL 1 TO METAL 2 (VIA 1)
+      top_metal: 2
+      bottom_metal: 1
+      resistance: 9
+      min_width: 0.19
+      space: 0.29
+      enclosure: 0.01
+      endcap_enclosure: 0.05
+      name: VIA1
+      color: purple
+      gds_number: 19
+      gds_datatype: 0
+    - description: METAL 2 TO METAL 3 (VIA 2)
+      top_metal: 3
+      bottom_metal: 2
+      resistance: 9
+      min_width: 0.19
+      space: 0.29
+      enclosure: 0.005
+      endcap_enclosure: 0.05
+      name: VIA2
+      color: red
+      gds_number: 29
+      gds_datatype: 0
+    - description: METAL 3 TO METAL 4 (VIA 3)
+      top_metal: 4
+      bottom_metal: 3
+      resistance: 9
+      min_width: 0.19
+      space: 0.29
+      enclosure: 0.005
+      endcap_enclosure: 0.05
+      name: VIA3
+      color: lime
+      gds_number: 49
+      gds_datatype: 0
+    - description: METAL 4 TO METAL 5 (VIA 4)
+      top_metal: 5
+      bottom_metal: 4
+      resistance: 9
+      min_width: 0.19
+      space: 0.29
+      enclosure: 0.005
+      endcap_enclosure: 0.05
+      name: VIA4
+      color: dark orange
+      gds_number: 66
+      gds_datatype: 0
+    - description: METAL 5 TO TOP METAL 1 (TOP VIA 1)
+      top_metal: 6
+      bottom_metal: 5
+      resistance: 2.2
+      min_width: 0.42
+      space: 0.42
+      enclosure: 0.1
+      endcap_enclosure: 0.42
+      name: TVIA1
+      color: light brown
+      gds_number: 125
+      gds_datatype: 0
+    - description: TOP METAL 1 TO TOP METAL 2 (TOP VIA 2)
+      top_metal: 7
+      bottom_metal: 6
+      resistance: 1.1
+      min_width: 0.9
+      space: 1.06
+      enclosure: 0.5
+      endcap_enclosure: 0.5
+      name: TVIA2
+      color: brown
+      gds_number: 133
+      gds_datatype: 0
+  ihp130Conductivity:
+    layer:
+    - description: SUBSTRATE
+      conductivity: 2.0
+      thickness: 280.0
+      permittivity: 11.9
+    - description: EPI
+      conductivity: 5.0
+      thickness: 3.75
+      permittivity: 11.9
+    - description: OXIDE LAYER 1
+      conductivity: 1.0e-08
+      thickness: 1.04
+      permittivity: 4.1
+    - description: OXIDE LAYER 2
+      conductivity: 1.0e-08
+      thickness: 0.96
+      permittivity: 4.1
+    - description: OXIDE LAYER 3
+      conductivity: 1.0e-08
+      thickness: 1.03
+      permittivity: 4.1
+    - description: OXIDE LAYER 4
+      conductivity: 1.0e-08
+      thickness: 1.03
+      permittivity: 4.1
+    - description: OXIDE LAYER 5
+      conductivity: 1.0e-08
+      thickness: 1.03
+      permittivity: 4.1
+    - description: OXIDE LAYER 6
+      conductivity: 1.0e-08
+      thickness: 0.5143
+      permittivity: 4.1
+    - description: OXIDE LAYER 7
+      conductivity: 1.0e-08
+      thickness: 0.826
+      permittivity: 4.1
+    - description: OXIDE LAYER 8
+      conductivity: 1.0e-08
+      thickness: 4.8
+      permittivity: 4.1
+    - description: OXIDE LAYER 9
+      conductivity: 1.0e-08
+      thickness: 4.5
+      permittivity: 4.1
+    metal:
+    - description: ACTIV
+      layer: 2
+      conductivity: 357140.0
+      thickness: 0.4
+      distance: 0.0
+      name: ACTIV
+      color: light green
+      gds_number: 1
+      gds_datatype: 0
+    - description: METAL 1
+      layer: 3
+      conductivity: 21640000.0
+      thickness: 0.42
+      distance: 0.0
+      name: MET1
+      color: LightSkyBlue1
+      gds_number: 8
+      gds_datatype: 0
+    - description: METAL 2
+      layer: 4
+      conductivity: 23190000.0
+      thickness: 0.49
+      distance: 0.0
+      name: MET2
+      color: light gray
+      gds_number: 10
+      gds_datatype: 0
+    - description: METAL 3
+      layer: 5
+      conductivity: 23190000.0
+      thickness: 0.49
+      distance: 0.0
+      name: MET3
+      color: dark red
+      gds_number: 30
+      gds_datatype: 0
+    - description: METAL 4
+      layer: 6
+      conductivity: 23190000.0
+      thickness: 0.49
+      distance: 0.0
+      name: MET4
+      color: light green
+      gds_number: 50
+      gds_datatype: 0
+    - description: METAL 5
+      layer: 7
+      conductivity: 23190000.0
+      thickness: 0.49
+      distance: 0.0
+      name: MET5
+      color: gold
+      gds_number: 67
+      gds_datatype: 0
+    - description: TOP METAL 1
+      layer: 9
+      conductivity: 27800000.0
+      thickness: 2.0
+      distance: 0.0
+      name: TMET1
+      color: wheat
+      gds_number: 126
+      gds_datatype: 0
+    - description: TOP METAL 2
+      layer: 10
+      conductivity: 30300000.0
+      thickness: 3.0
+      distance: 0.0
+      name: TMET2
+      color: orange
+      gds_number: 134
+      gds_datatype: 0
+    via:
+    - description: ACTIV TO METAL 1 (CONT)
+      top_metal: 1
+      bottom_metal: 0
+      conductivity: 2390000.0
+      thickness: 1.04
+      min_width: 0.16
+      space: 0.2
+      enclosure: 0.07
+      endcap_enclosure: 0.07
+      name: CONT
+      color: light blue
+      gds_number: 6
+      gds_datatype: 0
+    - description: METAL 1 TO METAL 2 (VIA 1)
+      top_metal: 2
+      bottom_metal: 1
+      conductivity: 1660000.0
+      thickness: 0.54
+      min_width: 0.19
+      space: 0.29
+      enclosure: 0.01
+      endcap_enclosure: 0.05
+      name: VIA1
+      color: purple
+      gds_number: 19
+      gds_datatype: 0
+    - description: METAL 2 TO METAL 3 (VIA 2)
+      top_metal: 3
+      bottom_metal: 2
+      conductivity: 1660000.0
+      thickness: 0.54
+      min_width: 0.19
+      space: 0.29
+      enclosure: 0.005
+      endcap_enclosure: 0.05
+      name: VIA2
+      color: red
+      gds_number: 29
+      gds_datatype: 0
+    - description: METAL 3 TO METAL 4 (VIA 3)
+      top_metal: 4
+      bottom_metal: 3
+      conductivity: 1660000.0
+      thickness: 0.54
+      min_width: 0.19
+      space: 0.29
+      enclosure: 0.005
+      endcap_enclosure: 0.05
+      name: VIA3
+      color: lime
+      gds_number: 49
+      gds_datatype: 0
+    - description: METAL 4 TO METAL 5 (VIA 4)
+      top_metal: 5
+      bottom_metal: 4
+      conductivity: 1660000.0
+      thickness: 0.54
+      min_width: 0.19
+      space: 0.29
+      enclosure: 0.005
+      endcap_enclosure: 0.05
+      name: VIA4
+      color: dark orange
+      gds_number: 66
+      gds_datatype: 0
+    - description: METAL 5 TO TOP METAL 1 (TOP VIA 1)
+      top_metal: 6
+      bottom_metal: 5
+      conductivity: 2191000.0
+      thickness: 0.85
+      min_width: 0.42
+      space: 0.42
+      enclosure: 0.1
+      endcap_enclosure: 0.42
+      name: TVIA1
+      color: light brown
+      gds_number: 125
+      gds_datatype: 0
+    - description: TOP METAL 1 TO TOP METAL 2 (TOP VIA 2)
+      top_metal: 7
+      bottom_metal: 6
+      conductivity: 3143000.0
+      thickness: 2.8
+      min_width: 0.9
+      space: 1.06
+      enclosure: 0.5
+      endcap_enclosure: 0.5
+      name: TVIA2
+      color: brown
+      gds_number: 133
+      gds_datatype: 0
+  ihp130Resistivity:
+    layer:
+    - description: SUBSTRATE
+      resistivity: 50.0
+      thickness: 280.0
+      permittivity: 11.9
+    - description: EPI
+      resistivity: 20.0
+      thickness: 3.75
+      permittivity: 11.9
+    - description: OXIDE LAYER 1
+      resistivity: 10000000000.0
+      thickness: 1.04
+      permittivity: 4.1
+    - description: OXIDE LAYER 2
+      resistivity: 10000000000.0
+      thickness: 0.96
+      permittivity: 4.1
+    - description: OXIDE LAYER 3
+      resistivity: 10000000000.0
+      thickness: 1.03
+      permittivity: 4.1
+    - description: OXIDE LAYER 4
+      resistivity: 10000000000.0
+      thickness: 1.03
+      permittivity: 4.1
+    - description: OXIDE LAYER 5
+      resistivity: 10000000000.0
+      thickness: 1.03
+      permittivity: 4.1
+    - description: OXIDE LAYER 6
+      resistivity: 10000000000.0
+      thickness: 0.5143
+      permittivity: 4.1
+    - description: OXIDE LAYER 7
+      resistivity: 10000000000.0
+      thickness: 0.826
+      permittivity: 4.1
+    - description: OXIDE LAYER 8
+      resistivity: 10000000000.0
+      thickness: 4.8
+      permittivity: 4.1
+    - description: OXIDE LAYER 9
+      resistivity: 10000000000.0
+      thickness: 4.5
+      permittivity: 4.1
+    metal:
+    - description: ACTIV
+      layer: 2
+      resistivity: 0.00028
+      thickness: 0.4
+      distance: 0.0
+      name: ACTIV
+      color: light green
+      gds_number: 1
+      gds_datatype: 0
+    - description: METAL 1
+      layer: 3
+      resistivity: 4.62e-06
+      thickness: 0.42
+      distance: 0.0
+      name: MET1
+      color: LightSkyBlue1
+      gds_number: 8
+      gds_datatype: 0
+    - description: METAL 2
+      layer: 4
+      resistivity: 4.312e-06
+      thickness: 0.49
+      distance: 0.0
+      name: MET2
+      color: light gray
+      gds_number: 10
+      gds_datatype: 0
+    - description: METAL 3
+      layer: 5
+      resistivity: 4.312e-06
+      thickness: 0.49
+      distance: 0.0
+      name: MET3
+      color: dark red
+      gds_number: 30
+      gds_datatype: 0
+    - description: METAL 4
+      layer: 6
+      resistivity: 4.312e-06
+      thickness: 0.49
+      distance: 0.0
+      name: MET4
+      color: light green
+      gds_number: 50
+      gds_datatype: 0
+    - description: METAL 5
+      layer: 7
+      resistivity: 4.312e-06
+      thickness: 0.49
+      distance: 0.0
+      name: MET5
+      color: gold
+      gds_number: 67
+      gds_datatype: 0
+    - description: TOP METAL 1
+      layer: 9
+      resistivity: 3.597e-06
+      thickness: 2.0
+      distance: 0.0
+      name: TMET1
+      color: wheat
+      gds_number: 126
+      gds_datatype: 0
+    - description: TOP METAL 2
+      layer: 10
+      resistivity: 3.3e-06
+      thickness: 3.0
+      distance: 0.0
+      name: TMET2
+      color: orange
+      gds_number: 134
+      gds_datatype: 0
+    via:
+    - description: ACTIV TO METAL 1 (CONT)
+      top_metal: 1
+      bottom_metal: 0
+      resistivity: 4.184e-05
+      thickness: 1.04
+      min_width: 0.16
+      space: 0.2
+      enclosure: 0.07
+      endcap_enclosure: 0.07
+      name: CONT
+      color: light blue
+      gds_number: 6
+      gds_datatype: 0
+    - description: METAL 1 TO METAL 2 (VIA 1)
+      top_metal: 2
+      bottom_metal: 1
+      resistivity: 6.024e-05
+      thickness: 0.54
+      min_width: 0.19
+      space: 0.29
+      enclosure: 0.01
+      endcap_enclosure: 0.05
+      name: VIA1
+      color: purple
+      gds_number: 19
+      gds_datatype: 0
+    - description: METAL 2 TO METAL 3 (VIA 2)
+      top_metal: 3
+      bottom_metal: 2
+      resistivity: 6.024e-05
+      thickness: 0.54
+      min_width: 0.19
+      space: 0.29
+      enclosure: 0.005
+      endcap_enclosure: 0.05
+      name: VIA2
+      color: red
+      gds_number: 29
+      gds_datatype: 0
+    - description: METAL 3 TO METAL 4 (VIA 3)
+      top_metal: 4
+      bottom_metal: 3
+      resistivity: 6.024e-05
+      thickness: 0.54
+      min_width: 0.19
+      space: 0.29
+      enclosure: 0.005
+      endcap_enclosure: 0.05
+      name: VIA3
+      color: lime
+      gds_number: 49
+      gds_datatype: 0
+    - description: METAL 4 TO METAL 5 (VIA 4)
+      top_metal: 5
+      bottom_metal: 4
+      resistivity: 6.024e-05
+      thickness: 0.54
+      min_width: 0.19
+      space: 0.29
+      enclosure: 0.005
+      endcap_enclosure: 0.05
+      name: VIA4
+      color: dark orange
+      gds_number: 66
+      gds_datatype: 0
+    - description: METAL 5 TO TOP METAL 1 (TOP VIA 1)
+      top_metal: 6
+      bottom_metal: 5
+      resistivity: 4.564e-05
+      thickness: 0.85
+      min_width: 0.42
+      space: 0.42
+      enclosure: 0.1
+      endcap_enclosure: 0.42
+      name: TVIA1
+      color: light brown
+      gds_number: 125
+      gds_datatype: 0
+    - description: TOP METAL 1 TO TOP METAL 2 (TOP VIA 2)
+      top_metal: 7
+      bottom_metal: 6
+      resistivity: 3.182e-05
+      thickness: 2.8
+      min_width: 0.9
+      space: 1.06
+      enclosure: 0.5
+      endcap_enclosure: 0.5
+      name: TVIA2
+      color: brown
+      gds_number: 133
+      gds_datatype: 0

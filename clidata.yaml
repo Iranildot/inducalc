@@ -1,0 +1,6 @@
+commands_history:
+- inductor draw "benchtest" "10" "10.gds"
+- inductor draw
+current_theme: Dark
+current_working_directory: C:\Users\irani\OneDrive\Documentos\Nova pasta
+helper: true
